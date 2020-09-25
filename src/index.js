@@ -1,46 +1,6 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import styles from './styles.module.css'
 
-import BreadCrumbComp from './breadCrumbComp'
-import ButtonComp from './buttonComp'
-import CheckComp from './checkComp'
-import DatePickerComp from './datePickerComp'
-import InputComp from './inputComp'
-import LeftDrawerPanel from './leftDrawerPanel'
-import MultiSelectComp from './multiSelectComp'
-import RightDrawerPanel from './rightDrawerPanel'
-import SelectComp from './selectComp'
-import TextAreaComp from './textAreaComp'
-
-export {
-  BreadCrumbComp,
-  ButtonComp,
-  CheckComp,
-  DatePickerComp,
-  InputComp,
-  LeftDrawerPanel,
-  MultiSelectComp,
-  RightDrawerPanel,
-  SelectComp,
-  TextAreaComp
+export const ExampleComponent = ({ text }) => {
+  return <div className={styles.test}>Example Component: {text}</div>
 }
-
-// if (process.env.REACT_APP_test) {
-//   ReactDOM.render(
-//     <React.StrictMode>
-//       {/*
-//       <DatePickerComp />
-//       <MultiSelectComp />
-//     */}
-//       <BreadCrumbComp />
-//       <ButtonComp />
-//       <CheckComp />
-//       <InputComp />
-//       <LeftDrawerPanel />
-//       <RightDrawerPanel />
-//       <SelectComp />
-//       <TextAreaComp />
-//     </React.StrictMode>,
-//     document.getElementById('root')
-//   )
-// }
