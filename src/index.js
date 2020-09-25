@@ -25,22 +25,22 @@ export {
   TextAreaComp
 }
 
-if (process.env.REACT_APP_test) {
-  ReactDOM.render(
-    <React.StrictMode>
-      {/* 
-      <DatePickerComp />
-      <MultiSelectComp />
-    */}
-      <BreadCrumbComp />
-      <ButtonComp />
-      <CheckComp />
-      <InputComp />
-      <LeftDrawerPanel />
-      <RightDrawerPanel />
-      <SelectComp />
-      <TextAreaComp />
-    </React.StrictMode>,
-    document.getElementById('root')
-  )
-}
+// if (process.env.REACT_APP_test) {
+//   ReactDOM.render(
+//     <React.StrictMode>
+//       {/*
+//       <DatePickerComp />
+//       <MultiSelectComp />
+//     */}
+//       <BreadCrumbComp />
+//       <ButtonComp />
+//       <CheckComp />
+//       <InputComp />
+//       <LeftDrawerPanel />
+//       <RightDrawerPanel />
+//       <SelectComp />
+//       <TextAreaComp />
+//     </React.StrictMode>,
+//     document.getElementById('root')
+//   )
+// }
