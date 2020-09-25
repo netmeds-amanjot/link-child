@@ -1,17 +1,46 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import BreadCrumbComp from './breadCrumbComp'
+import ButtonComp from './buttonComp'
+import CheckComp from './checkComp'
+import DatePickerComp from './datePickerComp'
+import InputComp from './inputComp'
+import LeftDrawerPanel from './leftDrawerPanel'
+import MultiSelectComp from './multiSelectComp'
+import RightDrawerPanel from './rightDrawerPanel'
+import SelectComp from './selectComp'
+import TextAreaComp from './textAreaComp'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+export {
+  BreadCrumbComp,
+  ButtonComp,
+  CheckComp,
+  DatePickerComp,
+  InputComp,
+  LeftDrawerPanel,
+  MultiSelectComp,
+  RightDrawerPanel,
+  SelectComp,
+  TextAreaComp
+}
+
+if (process.env.REACT_APP_test) {
+  ReactDOM.render(
+    <React.StrictMode>
+      {/* 
+      <DatePickerComp />
+      <MultiSelectComp />
+    */}
+      <BreadCrumbComp />
+      <ButtonComp />
+      <CheckComp />
+      <InputComp />
+      <LeftDrawerPanel />
+      <RightDrawerPanel />
+      <SelectComp />
+      <TextAreaComp />
+    </React.StrictMode>,
+    document.getElementById('root')
+  )
+}
