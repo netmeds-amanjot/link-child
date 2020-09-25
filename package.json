@@ -1,8 +1,18 @@
 {
   "name": "@kivi/components",
-  "main": "build/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": ["dist", "README.md"],
   "version": "0.1.0",
-  "private": true,
+  "devDependencies": {
+    "@material-ui/core": "^4.11.0",
+    "babel-cli": "^6.26.0",
+    "react-scripts": "3.4.3"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/plugin-transform-react-jsx": "^7.10.4",
@@ -12,16 +22,14 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.56",
     "@material-ui/pickers": "^3.2.10",
-    "date-fns": "^2.16.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "date-fns": "^2.16.1"
   },
   "scripts": {
     "local": "set PORT=4000 && set REACT_APP_test=true && npm run start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build:c": "babel --no-babelrc src --out-dir dist --copy-files --presets-env,stage-2,react",
+    "build:raw": "cross-env NODE_ENV='development' babel src/ --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -29,19 +37,11 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@material-ui/core": "^4.11.0",
-    "babel-cli": "^6.26.0"
   }
 }
