@@ -1,6 +1,3 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-
 import BreadCrumbComp from './breadCrumbComp'
 import ButtonComp from './buttonComp'
 import CheckComp from './checkComp'
@@ -24,23 +21,3 @@ export {
   SelectComp,
   TextAreaComp
 }
-
-// if (process.env.REACT_APP_test) {
-//   ReactDOM.render(
-//     <React.StrictMode>
-//       {/*
-//       <DatePickerComp />
-//       <MultiSelectComp />
-//     */}
-//       <BreadCrumbComp />
-//       <ButtonComp />
-//       <CheckComp />
-//       <InputComp />
-//       <LeftDrawerPanel />
-//       <RightDrawerPanel />
-//       <SelectComp />
-//       <TextAreaComp />
-//     </React.StrictMode>,
-//     document.getElementById('root')
-//   )
-// }
