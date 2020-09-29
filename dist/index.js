@@ -3,31 +3,31 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "BreadCrumbComp", {
+Object.defineProperty(exports, "BreadCrumb", {
   enumerable: true,
   get: function get() {
     return _breadCrumbComp.default;
   }
 });
-Object.defineProperty(exports, "ButtonComp", {
+Object.defineProperty(exports, "Button", {
   enumerable: true,
   get: function get() {
     return _buttonComp.default;
   }
 });
-Object.defineProperty(exports, "CheckComp", {
+Object.defineProperty(exports, "Check", {
   enumerable: true,
   get: function get() {
     return _checkComp.default;
   }
 });
-Object.defineProperty(exports, "DatePickerComp", {
+Object.defineProperty(exports, "DatePicker", {
   enumerable: true,
   get: function get() {
     return _datePickerComp.default;
   }
 });
-Object.defineProperty(exports, "InputComp", {
+Object.defineProperty(exports, "Input", {
   enumerable: true,
   get: function get() {
     return _inputComp.default;
@@ -39,7 +39,7 @@ Object.defineProperty(exports, "LeftDrawerPanel", {
     return _leftDrawerPanel.default;
   }
 });
-Object.defineProperty(exports, "MultiSelectComp", {
+Object.defineProperty(exports, "MultiSelect", {
   enumerable: true,
   get: function get() {
     return _multiSelectComp.default;
@@ -51,18 +51,19 @@ Object.defineProperty(exports, "RightDrawerPanel", {
     return _rightDrawerPanel.default;
   }
 });
-Object.defineProperty(exports, "SelectComp", {
+Object.defineProperty(exports, "Select", {
   enumerable: true,
   get: function get() {
     return _selectComp.default;
   }
 });
-Object.defineProperty(exports, "TextAreaComp", {
+Object.defineProperty(exports, "TextArea", {
   enumerable: true,
   get: function get() {
     return _textAreaComp.default;
   }
 });
+exports.default = void 0;
 
 var _breadCrumbComp = _interopRequireDefault(require("./breadCrumbComp"));
 
@@ -85,3 +86,6 @@ var _selectComp = _interopRequireDefault(require("./selectComp"));
 var _textAreaComp = _interopRequireDefault(require("./textAreaComp"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _default = "@kivi/components: export list =  [BreadCrumb,\n  Button,\n  Check,\n  DatePicker,\n  Input,\n  LeftDrawerPanel,\n  MultiSelect,\n  RightDrawerPanel,\n  Select,\n  TextArea]";
+exports.default = _default;

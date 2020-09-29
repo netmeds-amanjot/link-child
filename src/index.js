@@ -21,3 +21,13 @@ export {
   Select,
   TextArea
 }
+export default `@kivi/components: export list =  [BreadCrumb,
+  Button,
+  Check,
+  DatePicker,
+  Input,
+  LeftDrawerPanel,
+  MultiSelect,
+  RightDrawerPanel,
+  Select,
+  TextArea]`
