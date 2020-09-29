@@ -1,23 +1,23 @@
-import BreadCrumbComp from './breadCrumbComp'
-import ButtonComp from './buttonComp'
-import CheckComp from './checkComp'
-import DatePickerComp from './datePickerComp'
-import InputComp from './inputComp'
+import BreadCrumb from './breadCrumbComp'
+import Button from './buttonComp'
+import Check from './checkComp'
+import DatePicker from './datePickerComp'
+import Input from './inputComp'
 import LeftDrawerPanel from './leftDrawerPanel'
-import MultiSelectComp from './multiSelectComp'
+import MultiSelect from './multiSelectComp'
 import RightDrawerPanel from './rightDrawerPanel'
-import SelectComp from './selectComp'
-import TextAreaComp from './textAreaComp'
+import Select from './selectComp'
+import TextArea from './textAreaComp'
 
 export {
-  BreadCrumbComp,
-  ButtonComp,
-  CheckComp,
-  DatePickerComp,
-  InputComp,
+  BreadCrumb,
+  Button,
+  Check,
+  DatePicker,
+  Input,
   LeftDrawerPanel,
-  MultiSelectComp,
+  MultiSelect,
   RightDrawerPanel,
-  SelectComp,
-  TextAreaComp
+  Select,
+  TextArea
 }
