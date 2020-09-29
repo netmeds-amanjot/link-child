@@ -68,7 +68,7 @@ var InputComp = function InputComp(props) {
     disabled: props.isDisable ? props.isDisable : false
   }, /*#__PURE__*/_react.default.createElement(_core.OutlinedInput, {
     id: props.label,
-    placeholder: props.label,
+    placeholder: "this is working",
     variant: "outlined",
     size: "small",
     className: classes.inputBox,

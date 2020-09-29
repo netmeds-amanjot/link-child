@@ -1,6 +1,5 @@
 {
   "name": "@kivi/components",
-  "main": "dist/index.js",
   "version": "0.1.0",
   "peerDependencies": {
     "@material-ui/core": "^4.11.0",
@@ -16,7 +15,7 @@
     "date-fns": "^2.16.1"
   },
   "scripts": {
-    "local": "set PORT=4000 && set REACT_APP_test=true && npm run start",
+    "local": "set PORT=5000 && set REACT_APP_test=true && npm run start",
     "start": "react-scripts start",
     "build": "babel --presets @babel/preset-react src --out-dir dist --copy-files"
   },

@@ -1,6 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom";
-
 import BreadCrumb from "./breadCrumbComp";
 import Button from "./buttonComp";
 import Check from "./checkComp";
@@ -12,8 +9,25 @@ import RightDrawerPanel from "./rightDrawerPanel";
 import Select from "./selectComp";
 import TextArea from "./textAreaComp";
 
-import defaultProps from "./defaultProps";
-const Component = Input;
-const props = defaultProps.input;
-
-ReactDOM.render(<Component {...props} />, document.getElementById("root"));
+export {
+  BreadCrumb,
+  Button,
+  Check,
+  DatePicker,
+  Input,
+  LeftDrawerPanel,
+  MultiSelect,
+  RightDrawerPanel,
+  Select,
+  TextArea,
+};
+export default `@kivi/components: export list =  [BreadCrumb,
+  Button,
+  Check,
+  DatePicker,
+  Input,
+  LeftDrawerPanel,
+  MultiSelect,
+  RightDrawerPanel,
+  Select,
+  TextArea]`;
